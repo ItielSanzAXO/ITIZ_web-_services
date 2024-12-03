@@ -18,15 +18,20 @@
     max-width: 400px;
 }
 
-.contacto-container h2 {
+.contacto-titulo {
     color: #333; /* Color del texto */
     margin-bottom: 20px;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
 }
 
 .contacto-info {
     color: #555; /* Color del texto */
     font-size: 16px;
     margin-bottom: 10px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .contacto-link {

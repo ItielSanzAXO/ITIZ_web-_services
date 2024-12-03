@@ -1,0 +1,22 @@
+.descripcion {
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: #f0fff0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.descripcion-titulo {
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+}
+
+.descripcion-texto {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 600px;
+}
