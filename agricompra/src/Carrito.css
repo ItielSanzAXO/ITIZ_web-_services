@@ -1,0 +1,116 @@
+.shoppingCartItemImage {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.shoppingCartItemImage:hover {
+  transform: scale(1.05);
+}
+
+.shoppingCartItemTitle {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.shoppingCartItemPrice {
+  color: #00a650;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.shoppingCartItemQuantity {
+  width: 60px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.shoppingCartItemRemoveButton {
+  background-color: #ff1744;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+}
+
+.shoppingCartItemRemoveButton:hover {
+  background-color: #d50000;
+}
+
+.shoppingCartItemsContainer {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.shoppingCartItemsContainer tr {
+  transition: background-color 0.3s ease;
+}
+
+.shoppingCartItemsContainer tr:hover {
+  background-color: #f1f1f1;
+}
+
+.shoppingCartItemsContainer tr td {
+  padding: 15px;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.shoppingCartItemsContainer tr:last-child td {
+  border-bottom: none;
+}
+
+.shoppingCartItemsContainer tr td img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.shoppingCartItemsContainer tr td img:hover {
+  transform: scale(1.1);
+}
+
+.shoppingCartContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.shoppingCartTotalContainer {
+  margin-top: 20px;
+}
+
+.shoppingCartItemBuyButton {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shoppingCartItemBuyButton:hover {
+  background-color: #00a152;
+}

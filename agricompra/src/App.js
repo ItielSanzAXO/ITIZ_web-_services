@@ -7,41 +7,69 @@ import ProductosPage from './ProductosPage';
 import Account from './Account';
 import Contacto from './Contacto';
 import Nosotros from './Nosotros';
+import Carrito from './Carrito';
 
 function App() {
   return (
-    <Router>
-      {/* Navbar siempre visible */}
-      <Navbar />
-      
-      {/* Contenido dinámico basado en las rutas */}
-      <Routes>
-        <Route path="/" element={<>
-          <Carousel />
-          <Productos />
-          <Contacto />
-          <Nosotros />
-          <div style={{ marginBottom: '2em' }}></div> {/* Espacio adicional */}
-        </>} />
-        <Route path="/productos" element={<>
-          <Productos />
-          <div style={{ marginBottom: '2em' }}></div> {/* Espacio adicional */}
-        </>} />
-        <Route path="/ProductosPage" element={<>
-          <ProductosPage />
-          <div style={{ marginBottom: '2em' }}></div> {/* Espacio adicional */}
-        </>} />
-        <Route path="/Account" element={<>
-          <Account />
-          <div style={{ marginBottom: '2em' }}></div> {/* Espacio adicional */}
-        </>} />
-      </Routes>
+    <div className="App">
+      <Router>
+        <Navbar />
 
-      {/* Pie de página */}
-      <footer style={{ backgroundColor: 'green', color: 'white', textAlign: 'center', padding: '1em 0' }}>
-        Copyright AxoPunk
-      </footer>
-    </Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Carousel />
+                <Productos />
+                <Contacto />
+                <Nosotros />
+                <div style={{ marginBottom: '2em' }}></div>
+              </>
+            }
+          />
+          <Route
+            path="/productos"
+            element={
+              <>
+                <Productos />
+                <div style={{ marginBottom: '2em' }}></div>
+              </>
+            }
+          />
+          <Route
+            path="/ProductosPage"
+            element={
+              <>
+                <ProductosPage />
+                <div style={{ marginBottom: '2em' }}></div>
+              </>
+            }
+          />
+          <Route
+            path="/Account"
+            element={
+              <>
+                <Account />
+                <div style={{ marginBottom: '2em' }}></div>
+              </>
+            }
+          />
+          <Route path="/Carrito" element={<Carrito />} />
+        </Routes>
+
+        <footer
+          style={{
+            backgroundColor: 'green',
+            color: 'white',
+            textAlign: 'center',
+            padding: '1em 0',
+          }}
+        >
+          Copyright AxoPunk
+        </footer>
+      </Router>
+    </div>
   );
 }
 
