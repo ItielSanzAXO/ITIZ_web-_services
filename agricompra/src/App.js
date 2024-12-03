@@ -66,7 +66,7 @@ function App() {
             padding: '1em 0',
           }}
         >
-          Copyright AxoPunk
+          Copyright Agricompra
         </footer>
       </Router>
     </div>
