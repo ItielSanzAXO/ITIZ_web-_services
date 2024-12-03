@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: red; /* Cambia el color de fondo */
+  background-color: rgb(23, 233, 23); /* Cambia el color de fondo */
   border-bottom: 1px solid #388E3C;
   font-family: 'Roboto', sans-serif; /* Aplica la fuente a la barra de navegación */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra */

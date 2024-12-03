@@ -12,7 +12,7 @@ function Navbar() {
       </div>
       <div className="navbar-right">
         <Link to="/ProductosPage">Productos</Link>
-        <a href="#carrito">Carrito</a>
+        <a href="/Carrito">Carrito</a>
         <Link to="/Account">Cuenta</Link>
       </div>
     </nav>
