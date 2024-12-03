@@ -15,6 +15,11 @@
     align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
 }
 
+.contacto-details, .logo-container, .map-container {
+    flex: 1; /* Permite que cada contenedor ocupe el mismo espacio disponible */
+    margin: 0 10px; /* Añade un margen horizontal para separar los elementos */
+}
+
 .contacto-details {
     max-width: 100%;
     flex: 1; /* Permite que el contenedor de detalles ocupe el espacio disponible */
@@ -51,7 +56,7 @@
 }
 
 .logo-image {
-    max-width: 400px; /* Aumenta el tamaño máximo de la imagen */
+    max-width: 100%; /* Asegura que la imagen ocupe el ancho disponible */
     height: auto;
 }
 
