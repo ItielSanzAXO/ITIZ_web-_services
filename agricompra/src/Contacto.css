@@ -20,20 +20,21 @@
     flex: 1; /* Permite que el contenedor de detalles ocupe el espacio disponible */
 }
 
-.contacto-titulo {
+.contacto-container h2 {
     color: #333; /* Color del texto */
     margin-bottom: 20px;
-    border-bottom: 2px solid green;
-    padding-bottom: 10px;
 }
 
 .contacto-info {
     color: #555; /* Color del texto */
     font-size: 16px;
     margin-bottom: 10px;
+<<<<<<< HEAD
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
+=======
+>>>>>>> parent of f5a143c (Agregue apartado nosotros)
 }
 
 .contacto-link {

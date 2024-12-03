@@ -6,7 +6,6 @@ import Productos from './Productos';
 import ProductosPage from './ProductosPage';
 import Account from './Account';
 import Contacto from './Contacto';
-import Nosotros from './Nosotros';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Carousel />
           <Productos />
           <Contacto />
-          <Nosotros />
         </>} />
         <Route path="/productos" element={<Productos />} /> {/* Asegúrate de que la ruta esté en minúsculas */}
         <Route path="/ProductosPage" element={<ProductosPage />} />
