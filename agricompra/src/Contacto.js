@@ -6,7 +6,7 @@ const Contacto = () => {
         <div className="contacto-container">
             <div className="contacto-info-container">
                 <div className="contacto-details">
-                    <h2>Contacto</h2>
+                    <h2 className="contacto-titulo">Contacto</h2>
                     <p className="contacto-info">
                         <strong>Número de contacto:</strong> 
                         <a href="tel:+5615965038" className="contacto-link"> +56 1596 5038</a>
