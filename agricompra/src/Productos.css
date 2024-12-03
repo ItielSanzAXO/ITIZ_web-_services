@@ -97,7 +97,7 @@ h2 {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: rgba(2, 146, 14, 0.61);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -106,7 +106,7 @@ h2 {
 }
 
 .view-all-button:hover {
-  background-color: #0056b3;
+  background-color: rgba(4, 202, 20, 0.61);
 }
 
 .error {
@@ -226,7 +226,7 @@ h2 {
 }
 
 .carrito-vacio .btn {
-  background-color: #007bff;
+  background-color: rgba(2, 146, 14, 0.61);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;

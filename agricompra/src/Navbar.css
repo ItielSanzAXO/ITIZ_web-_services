@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(0, 65, 73, 0.61); /* Cambia el color de fondo */
+  background-color: rgba(2, 146, 14, 0.61); /* Cambia el color de fondo */
   border-bottom: 1px solid #388E3C;
   font-family: 'Roboto', sans-serif; /* Aplica la fuente a la barra de navegación */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra */
@@ -44,12 +44,12 @@
 }
 
 .navbar-right a:hover {
-  background-color: #388E3C; /* Cambia el color de fondo al pasar el mouse */
+  background-color: rgba(2, 146, 14, 0.61); /* Cambia el color de fondo al pasar el mouse */
   color: #FFD700; /* Cambia el color del texto al pasar el mouse */
 }
 
 .custom-google-button {
-  background-color: #4285f4;
+  background-color: rgba(2, 146, 14, 0.61);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -60,7 +60,7 @@
 }
 
 .custom-google-button:hover {
-  background-color: #357ae8;
+  background-color: rgba(2, 146, 14, 0.61);
   color: #FFD700; /* Cambia el color del texto al pasar el mouse */
 }
 
@@ -94,14 +94,14 @@
   text-align: left;
   padding: 10px;
   border: none;
-  background-color: #4285f4;
+  background-color: rgba(2, 146, 14, 0.61);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease; /* Añade una transición suave */
 }
 
 .user-dropdown .custom-google-button:hover {
   background-color: white;
-  color: #4285f4; /* Cambia el color del texto al pasar el mouse */
+  color: rgba(2, 146, 14, 0.61); /* Cambia el color del texto al pasar el mouse */
 }
 
 /* Media query para hacer el navbar responsivo */
