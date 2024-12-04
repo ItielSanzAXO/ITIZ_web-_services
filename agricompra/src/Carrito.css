@@ -145,3 +145,126 @@
 .shoppingCartItemBuyButton:hover {
   background-color: #00a152;
 }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Más oscuro para mayor contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que el popup esté por encima de otros elementos */
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  animation: popup-animation 0.3s ease-out; /* Animación de aparición */
+}
+
+@keyframes popup-animation {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup-content h3 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: bold;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.popup-content .btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content .btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.popup-content .btn-success:hover {
+  background-color: #218838;
+}
+
+.popup-content .btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+
+.popup-content .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.popup-content .btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.popup-content .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.popup-content h3 {
+  margin-bottom: 20px;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-content .btn {
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
