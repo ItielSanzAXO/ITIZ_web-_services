@@ -1,0 +1,27 @@
+.descripcion {
+    color: green;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: #f0f8ff; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Aumenta el ancho máximo del contenedor */
+    text-align: center;
+}
+
+.descripcion-titulo {
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+}
+
+.descripcion-texto {
+    color: #555; /* Color del texto */
+    font-size: 16px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 600px;
+}

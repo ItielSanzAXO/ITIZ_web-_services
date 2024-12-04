@@ -18,13 +18,10 @@ function Carousel() {
   return (
     <div className="carousel" ref={carouselRef}>
       <div className="carousel-item">
-        <img src="https://via.placeholder.com/800x300?text=Promoción+1" alt="Promoción 1" />
+        <img src="/img/banner1.jpeg" alt="Banner 1" />
       </div>
       <div className="carousel-item">
-        <img src="https://via.placeholder.com/800x300?text=Promoción+2" alt="Promoción 2" />
-      </div>
-      <div className="carousel-item">
-        <img src="https://via.placeholder.com/800x300?text=Promoción+3" alt="Promoción 3" />
+        <img src="/img/banner2.jpeg" alt="Banner 2" />
       </div>
     </div>
   );

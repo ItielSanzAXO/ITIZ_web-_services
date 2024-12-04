@@ -1,7 +1,7 @@
 table {
-  width: 100%;
+  width: 80%; /* Reducir el ancho para centrar mejor */
+  margin: 20px auto; /* Centrar la tabla horizontalmente */
   border-collapse: collapse;
-  margin: 20px 0;
   font-size: 1em;
   font-family: 'Arial', sans-serif;
   min-width: 400px;
@@ -11,11 +11,12 @@ table {
 thead tr {
   background-color: #009879;
   color: #ffffff;
-  text-align: left;
+  text-align: center; /* Centrar el texto en el encabezado */
 }
 
 th, td {
   padding: 12px 15px;
+  text-align: center; /* Centrar el texto en las celdas */
 }
 
 tbody tr {
@@ -55,6 +56,7 @@ h2 {
   padding: 16px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #fff;
 }
 
 .product-card:hover {
@@ -65,6 +67,7 @@ h2 {
 .product-card img {
   width: 100px;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .product-card h2 {
@@ -76,11 +79,25 @@ h2 {
   margin: 10px 0;
 }
 
+.product-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #218838;
+}
+
 .view-all-button {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: rgba(2, 146, 14, 0.61);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -89,11 +106,134 @@ h2 {
 }
 
 .view-all-button:hover {
-  background-color: #0056b3;
+  background-color: rgba(4, 202, 20, 0.61);
 }
 
 .error {
   color: red;
   text-align: center;
   margin-top: 20px;
+}
+
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Aumentar la opacidad del fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease; /* Añadir transición para suavizar la aparición */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px; /* Aumentar el padding */
+  border-radius: 15px; /* Redondear más las esquinas */
+  text-align: center;
+  width: 400px; /* Aumentar el ancho */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Añadir sombra */
+  transform: scale(0.9); /* Añadir efecto de escala */
+  transition: transform 0.3s ease; /* Añadir transición para suavizar la aparición */
+}
+
+.modal-content h3 {
+  margin-bottom: 20px; /* Aumentar el margen inferior */
+  font-size: 1.8em; /* Aumentar el tamaño de la fuente */
+  color: #333; /* Cambiar el color del texto */
+}
+
+.modal-content p {
+  margin: 10px 0; /* Aumentar el margen */
+  font-size: 1.2em; /* Aumentar el tamaño de la fuente */
+  color: #666; /* Cambiar el color del texto */
+}
+
+.btn-close {
+  margin-top: 20px;
+  padding: 10px 20px; /* Aumentar el padding */
+  background-color: #dc3545; /* Cambiar el color de fondo */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em; /* Aumentar el tamaño de la fuente */
+  transition: background-color 0.3s ease; /* Añadir transición para suavizar el cambio de color */
+}
+
+.btn-close:hover {
+  background-color: #c82333; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+.total-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.total-container h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-comprar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #218838;
+}
+
+.carrito-container {
+  margin-bottom: 50px; /* Añadir margen inferior para separar del pie de página */
+}
+
+.cantidad-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cantidad-container .btn {
+  margin: 0 5px;
+}
+
+.cantidad {
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+
+.carrito-vacio {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carrito-vacio p {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.carrito-vacio .btn {
+  background-color: rgba(2, 146, 14, 0.61);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.carrito-vacio .btn:hover {
+  background-color: #0056b3;
 }

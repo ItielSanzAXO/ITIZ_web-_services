@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const sql = require('mssql');
 const cors = require('cors');
@@ -21,15 +22,15 @@ const config = {
   }
 };
 
+// Conexión a la base de datos
 sql.connect(config).then(pool => {
-  // Si la conexión es exitosa
   console.log('Connected to Azure SQL Database');
 
   // Ruta para obtener los productos desde la base de datos
   app.get('/api/productos', async (req, res) => {
     try {
       const result = await pool.request().query('SELECT * FROM Productos');
-      res.json(result.recordset); // Enviar los productos al frontend
+      res.json(result.recordset); // Devuelve los productos en formato JSON
     } catch (err) {
       res.status(500).send('Error en la consulta: ' + err.message);
     }
@@ -38,7 +39,7 @@ sql.connect(config).then(pool => {
   // Ruta para verificar la conexión a la base de datos
   app.get('/api/check-connection', async (req, res) => {
     try {
-      await pool.request().query('SELECT 1'); // Comprobamos si la base de datos responde
+      await pool.request().query('SELECT 1');
       res.send('Database connection is successful');
     } catch (err) {
       res.status(500).send('Database connection failed: ' + err.message);
@@ -46,10 +47,20 @@ sql.connect(config).then(pool => {
   });
 
 }).catch(err => {
-  // Si la conexión falla
   console.error('Database connection failed:', err);
 });
 
+// Servir archivos estáticos de React desde la carpeta build (solo en producción)
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'build')));
+
+  // Enviar el archivo index.html para todas las rutas no reconocidas (para el enrutamiento en React)
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });
+}
+
+// Puerto del servidor
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

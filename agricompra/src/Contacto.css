@@ -1,0 +1,69 @@
+.contacto-container {
+    background-color: #f0f8ff; /* Color de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Aumenta el ancho máximo del contenedor */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacto-info-container {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección del flex a fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+}
+
+.contacto-details, .logo-container, .map-container {
+    flex: 1; /* Permite que cada contenedor ocupe el mismo espacio disponible */
+    margin: 0 10px; /* Añade un margen horizontal para separar los elementos */
+}
+
+.contacto-details {
+    max-width: 100%;
+    flex: 1; /* Permite que el contenedor de detalles ocupe el espacio disponible */
+}
+
+.contacto-container h2 {
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+}
+
+.contacto-info {
+    color: #555; /* Color del texto */
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.contacto-link {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none;
+}
+
+.contacto-link:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    margin: 0 20px;
+    flex: 1; /* Permite que el contenedor del logo ocupe el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+}
+
+.logo-image {
+    max-width: 100%; /* Asegura que la imagen ocupe el ancho disponible */
+    height: auto;
+}
+
+.map-container {
+    margin-top: 0; /* Elimina el margen superior */
+    width: 100%; /* Asegura que el mapa ocupe todo el ancho disponible */
+    display: flex;
+    justify-content: center; /* Centra el mapa horizontalmente */
+    flex: 1; /* Permite que el contenedor del mapa ocupe el espacio disponible */
+}
