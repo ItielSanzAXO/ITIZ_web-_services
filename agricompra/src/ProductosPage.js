@@ -90,6 +90,12 @@ function ProductosPage() {
             >
               Agregar al carrito
             </button>
+            <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1QS1wSBaCaXlYE12egnHnjH6"
+              publishable-key="pk_test_51QPTQTBaCaXlYE12irOsvvtma50yyA84tJmnK4ixExDbNaiugQqFqFozmZBl1mq1rWgeEgYlL5u0cveVeTHcJsZp00mfVkctZl"
+            >
+            </stripe-buy-button>
           </div>
         ))}
       </div>
