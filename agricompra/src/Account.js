@@ -5,7 +5,10 @@ import './Account.css';
 const clientId = '429358795134-k6uvsgsr42f345ikfqv4jlip38mfngkf.apps.googleusercontent.com';
 
 function Account() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => {
+    const savedUser = localStorage.getItem('user');
+    return savedUser ? JSON.parse(savedUser) : null;
+  });
 
   useEffect(() => {
     const initializeGapi = () => {
@@ -27,14 +30,17 @@ function Account() {
 
   const handleCredentialResponse = (response) => {
     const userObject = jwtDecode(response.credential);
-    setUser({
+    const userData = {
       name: userObject.name,
       imageUrl: userObject.picture,
-    });
+    };
+    setUser(userData);
+    localStorage.setItem('user', JSON.stringify(userData));
   };
 
   const signOut = () => {
     setUser(null);
+    localStorage.removeItem('user');
     console.log('User signed out.');
   };
 
